@@ -59,7 +59,7 @@ def output_knowledge_point(students, work_book):
 def output_belonging_knowledge_point(students, work_book):
     sheet1 = work_book.add_sheet('单位表')
     renshu = {}
-    
+
     mat = {}
     for student in students:
         if student.belonging in renshu:
@@ -153,7 +153,7 @@ def read_students(students):
         student.deal_knowledge_point()
         students.append(student)
         print(student.marks)
-
+        print(student.name)
 
 if __name__ == '__main__':
     students = []
